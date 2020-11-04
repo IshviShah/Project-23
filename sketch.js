@@ -44,11 +44,13 @@ function setup() {
 
 	red2 = createSprite(310, 600, 20,100);
 	red2.shapeColor=color("red");
-	World.add(world, red2);
+	redBody2 = Bodies.rectangle(width/2, 600, 20,100 , {isStatic:true} );
+	World.add(world, redBody2);
 
 	red3 = createSprite(490, 600, 20,100);
 	red3.shapeColor=color("red");
-	World.add(world, red3);
+	redBody3 = Bodies.rectangle(width/2, 600, 20,100 , {isStatic:true} );
+	World.add(world, redBody3);
 
 
 
