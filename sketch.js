@@ -39,7 +39,8 @@ function setup() {
 	 
 	red1 = createSprite(width/2, 650, 200,20);
 	red1.shapeColor=color("red");
-	World.add(world, red1);
+	redBody1 = Bodies.rectangle(width/2, 635, 200,20 , {isStatic:true} );
+	World.add(world, redBody1);
 
 	red2 = createSprite(310, 600, 20,100);
 	red2.shapeColor=color("red");
@@ -49,7 +50,6 @@ function setup() {
 	red3.shapeColor=color("red");
 	World.add(world, red3);
 
-	packageBody.collide = red1;
 
 
 	Engine.run(engine);
